@@ -1,0 +1,40 @@
+{
+    "name":"bright-cloud-studio/contao-form-validation-messages",
+    "description":"Adds custom error messaging for form validation within Contao.",
+    "homepage": "http://brightcloudstudio.com/",
+    "keywords":["contao", "form", "validation", "bright", "cloud", "studio"],
+    "type":"contao-module",
+    "license":"LGPL-3.0-or-later",
+    "authors":[
+        {
+            "name":"Bright Cloud Studio",
+            "homepage":"https://brightcloudstudio.com"
+        }
+    ],
+    "support":{
+        "issues": "https://github.com/bright-cloud-studio/contao-form-validation-messages/issues",
+        "source": "https://github.com/bright-cloud-studio/contao-form-validation-messages"
+    },
+    "require":{
+        "php": "^8.0",
+        "contao/core-bundle": "^4.13"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bcs\\": [
+                "system/modules/contao_form_validation_messages/library/Bcs"
+            ]
+        }
+    },
+    "extra": {
+        "contao": {
+            "sources": {
+                "system/modules/contao_form_validation_messages": "system/modules/contao_form_validation_messages"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
