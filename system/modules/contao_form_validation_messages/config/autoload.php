@@ -3,5 +3,6 @@
 // Register Classes
 ClassLoader::addClasses(array
 (
-    'Bcs\Frontend\addValidationMessages'         => 'system/modules/contao_form_validation_messages/library/Bcs/Frontend/addValidationMessages.php'
+    // Hooks
+    'Bcs\Hooks'    => 'system/modules/contao_form_validation_messages/library/Bcs/Hooks.php'
 ));
