@@ -23,7 +23,7 @@ use Isotope\Model\Product;
 class Hooks
 {
     // Called when a form is submitted
-    public function onValidateFormField(Widget $widget, string $formId, array $formData, Form $form)
+    public function onValidateFormField($widget, $formId, $formData, $form)
     {
         // Do your custom validation and add an error if widget does not validate
         if (!$this->validateWidget($widget)) {
