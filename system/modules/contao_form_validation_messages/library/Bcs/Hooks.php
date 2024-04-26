@@ -25,6 +25,10 @@ class Hooks
     // Called when a form is submitted
     public function onValidateFormField(Widget $widget, string $formId, array $formData, Form $form)
     {
+        // Do your custom validation and add an error if widget does not validate
+        if (!$this->validateWidget($widget)) {
+            $widget->addError('My custom widget error');
+        }
 
         return $widget;
     }
